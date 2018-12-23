@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 title = "Robert"
 theme = "hermit"
 # enableGitInfo = true
+publishDir = "docs"
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 hasCJKLanguage = true  # If there're Chinese/Japanese/Korean Languages in the content, enable this.
