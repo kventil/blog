@@ -1,9 +1,9 @@
-baseURL = "https://hibbeler.me"
+baseURL = "https://kventil.github.io/blog"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Robert"
 theme = "hermit"
-# enableGitInfo = true
+ enableGitInfo = true
 publishDir = "docs"
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
