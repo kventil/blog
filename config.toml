@@ -1,4 +1,4 @@
-baseURL = "https://kventil.github.io/blog"
+baseURL = "https://kventil.github.io/blog/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Robert"
