@@ -7,4 +7,4 @@ tags:
   - mikroskopie
 ---
 
-![Chloroplasten](/blog/posts/images/chloroplasten.jpg)
+![Chloroplasten](images/chloroplasten.jpg)

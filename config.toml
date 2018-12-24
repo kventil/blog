@@ -14,6 +14,9 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 # googleAnalytics = "UA-123-45"
 # disqusShortname = "yourdiscussshortname"
 
+# hugo seems to have a problem with absolute and relative paths
+canonifyUrls = true
+
 [author]
   name = "Robert Hibbeler"
 
@@ -45,7 +48,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   [[params.social]]
     name = "instagram"
-    url = "https://instagram.com/kventil"
+    url = "https://www.instagram.com/kventil"
 
   [[params.social]]
     name = "github"
