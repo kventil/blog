@@ -26,20 +26,20 @@ Result:
 
 <p>Registered User and API key needed (get it here: <a href="https://data.deutschebahn.com/" target="_blank">https://data.deutschebahn.com/</a> and register for the fahrplan-api). Authorization via Bearer-Token
 Example: <code>http://api.deutschebahn.com/fahrplan-plus/v1/location/berlin</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-json=" data-lang="json=">[
-    {
-        &#34;name&#34;: &#34;BERLIN&#34;,
-        &#34;lon&#34;: 13.386988,
-        &#34;lat&#34;: 52.520501,
-        &#34;id&#34;: 8096003
-    },
-    {
-        &#34;name&#34;: &#34;Berlin Hbf&#34;,
-        &#34;lon&#34;: 13.369549,
-        &#34;lat&#34;: 52.525589,
-        &#34;id&#34;: 8011160
-    }
-]</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;BERLIN&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;lon&#34;</span><span class="p">:</span> <span class="mf">13.386988</span><span class="p">,</span>
+        <span class="nt">&#34;lat&#34;</span><span class="p">:</span> <span class="mf">52.520501</span><span class="p">,</span>
+        <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="mi">8096003</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Berlin Hbf&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;lon&#34;</span><span class="p">:</span> <span class="mf">13.369549</span><span class="p">,</span>
+        <span class="nt">&#34;lat&#34;</span><span class="p">:</span> <span class="mf">52.525589</span><span class="p">,</span>
+        <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="mi">8011160</span>
+    <span class="p">}</span>
+<span class="p">]</span></code></pre></div>
 <h2 id="2-request-live-timetable-with-station-from-locationrequest-via-not-so-official-api">2. Request Live Timetable with station from Locationrequest via not so official API:</h2>
 
 <p><code>https://reiseauskunft.bahn.de/bin/bhftafel.exe/dn?L=vs_java&amp;start=yes&amp;boardType=arr&amp;time=24:00&amp;input=8096021</code></p>
@@ -86,7 +86,7 @@ ICE  520
 </code></pre>
 
 <p>What worked on powershell:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell=" data-lang="shell=">httpie &#34;https://reiseauskunft.bahn.de/bin/bhftafel.exe/dn?L=vs_java&amp;start=yes&amp;boardType=arr&amp;time=24:00&amp;input=8096021&#34; | Select-String -Pattern &#34;ICE .* 520&#34; -Context 1</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">httpie <span class="s2">&#34;https://reiseauskunft.bahn.de/bin/bhftafel.exe/dn?L=vs_java&amp;start=yes&amp;boardType=arr&amp;time=24:00&amp;input=8096021&#34;</span> <span class="p">|</span> Select-String -Pattern <span class="s2">&#34;ICE .* 520&#34;</span> -Context <span class="m">1</span></code></pre></div>
 <p>output:</p>
 
 <pre><code> 00:04

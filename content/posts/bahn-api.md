@@ -11,7 +11,7 @@ tags:
 
 Registered User and API key needed (get it here: https://data.deutschebahn.com/ and register for the fahrplan-api). Authorization via Bearer-Token
 Example: `http://api.deutschebahn.com/fahrplan-plus/v1/location/berlin` 
-```json=
+```json
 [
     {
         "name": "BERLIN",
@@ -69,7 +69,7 @@ ICE  520
 
 What worked on powershell:
 
-```shell= 
+```bash
 httpie "https://reiseauskunft.bahn.de/bin/bhftafel.exe/dn?L=vs_java&start=yes&boardType=arr&time=24:00&input=8096021" | Select-String -Pattern "ICE .* 520" -Context 1
 ```
 
